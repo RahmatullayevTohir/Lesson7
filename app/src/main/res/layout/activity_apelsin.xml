@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB6C3A"
+    android:orientation="vertical"
+    tools:context=".Apelsin">
+
+    <LinearLayout
+        android:id="@+id/tv_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Your Logo"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rv_reklama"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv_recycler"
+        android:layout_marginTop="80dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rv_reklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/linear_layout_rounded_avtive"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/linear_layout_rounded"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="8dp"
+            android:background="@drawable/linear_layout_rounded"
+            android:layout_height="8dp"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/tv_recycler"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="398dp"
+        android:background="@drawable/apelsin_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/apelsin_click1"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/apelsin_click2"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+
+</RelativeLayout>
